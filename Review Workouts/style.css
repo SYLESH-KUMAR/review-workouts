@@ -1,0 +1,243 @@
+/* css */
+
+/* selectors */
+
+/* selecting elements by name */
+
+p {
+    color: blue;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* selecting elements by class */
+
+.example-class {
+    font-size: 16px;
+    color: green;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* selecting elements by id */
+
+#header {
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-content {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+/* selecting elements by context */
+
+/* Descendant Selector */
+
+/* Select all <span> elements that are descendants of <div> elements */
+div span {
+    color: red;
+}
+
+/* Select all <a> elements that are descendants of <nav> elements */
+nav a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Child Selector */
+
+/* Select all <li> elements that are direct children of <ul> elements */
+ul>li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+/* Select all <p> elements that are direct children of <article> elements */
+article>p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Selecting Links Based on Their State (Pseudo-class Selectors) */
+
+/* Unvisited link */
+a:link {
+    color: blue;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Link on mouse-over */
+a:hover {
+    color: red;
+}
+
+/* Active link */
+a:active {
+    color: orange;
+}
+
+/* Selecting Elements Based on Attributes (Attribute Selectors) */
+
+/* Select all input elements with a type attribute of "text" */
+input[type="text"] {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/* Select all images with an alt attribute */
+img[alt] {
+    border: 2px solid green;
+}
+
+/* Select all elements with a data-role attribute of "admin" */
+[data-role="admin"] {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Specifying a Group of Elements (Grouping Selector) */
+
+/* Apply the same styles to h1, h2, and h3 elements */
+h1,
+h2,
+h3 {
+    font-family: Arial, sans-serif;
+    color: navy;
+}
+
+/* Apply the same styles to paragraphs and list items */
+p,
+li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Combining Selectors */
+
+/* Select all paragraphs inside a div with class "content" */
+div.content p {
+    margin-bottom: 10px;
+}
+
+/* Select all input elements of type text within a form with id "signup" */
+form#signup input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Select all anchor tags within a navigation bar that are in the hover state */
+nav a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+/* Select list items that are direct children of unordered lists with class "menu" */
+ul.menu>li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+/* box model */
+
+/* padding, margin and border */
+
+/* Styling for the box */
+.box {
+    width: 300px;
+    /* Content width */
+    padding: 20px;
+    /* Padding inside the box */
+    border: 5px solid black;
+    /* Border around the box */
+    margin: 30px;
+    /* Margin outside the box */
+    background-color: lightgray;
+    /* Background color for visibility */
+}
+
+/* Styling for the text inside the box */
+.box p {
+    margin: 0;
+    /* Remove default margin from paragraph */
+    color: darkblue;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* display */
+
+/* none, block and inline-block */
+
+/* Basic styling for the boxes */
+.box {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 2px solid navy;
+    text-align: center;
+}
+
+/* Display property examples */
+
+/* The hidden box - it won't be visible on the page */
+.hidden {
+    display: none;
+}
+
+/* The block-level box - takes up the full width available */
+.block {
+    display: block;
+}
+
+/* The inline-block box - takes up only as much width as its content */
+.inline-block {
+    display: inline-block;
+}
+
+
+/* background */
+
+/* background image, color, position, size and repeat */
+
+/* Basic styling for the background divs */
+.background {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Background color example */
+.background-color {
+    background-color: lightblue;
+}
+
+/* Background image example */
+.background-image {
+    background-image: url('background-image.jpg');
+    /* Background position (optional) */
+    background-position: center;
+    /* Background size (optional) */
+    background-size: cover;
+    /* Background repeat (optional) */
+    background-repeat: no-repeat;
+}

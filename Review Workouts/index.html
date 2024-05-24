@@ -1,36 +1,44 @@
+<!-- html -->
+
 <!-- html structure -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML Page</title>
-    
+
     <!-- CSS styles -->
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
+
         h1 {
             color: blue;
         }
+
         p {
             color: green;
         }
     </style>
 </head>
+
 <body>
     <h1>Hello, World!</h1>
-    <p>This is an example HTML page.</p>
-    
+    <p>This is an HTML page.</p>
+
     <!-- JavaScript -->
     <script>
-        
+
         console.log('This is JavaScript running in the browser!');
-        
+
     </script>
 </body>
+
 </html>
 
 
@@ -81,25 +89,29 @@
 <textarea placeholder="Enter your message"></textarea>
 
 <!-- submit -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Form</title>
 </head>
+
 <body>
     <h2>Submit Form</h2>
     <form id="text">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username"><br><br>
-        
+
         <label for="password">Password:</label>
         <input type="password" id="password" name="password"><br><br>
-        
+
         <input type="submit" value="Submit">
     </form>
 </body>
+
 </html>
 
 <!-- reset -->
@@ -117,20 +129,22 @@
 <input type="hidden" name="secret_value" value="hidden_data">
 
 <!-- input types example -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Project</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
+
         form {
             max-width: 400px;
             margin: 20px auto;
@@ -139,6 +153,7 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         input[type="text"],
         input[type="url"],
         input[type="color"],
@@ -150,6 +165,7 @@
             border-radius: 5px;
             box-sizing: border-box;
         }
+
         input[type="submit"],
         input[type="reset"] {
             background-color: #4CAF50;
@@ -160,12 +176,14 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         input[type="submit"]:hover,
         input[type="reset"]:hover {
             background-color: #45a049;
         }
     </style>
 </head>
+
 <body>
     <h2>Form Project</h2>
     <form action="" method="post">
@@ -184,6 +202,7 @@
         <input type="reset" value="Reset">
     </form>
 </body>
+
 </html>
 
 
@@ -214,46 +233,50 @@
 <input type="text" name="postalcode" pattern="[0-9]{5}">
 
 <!-- input types attributes example -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Project</title>
 </head>
+
 <body>
     <h2>Form Project</h2>
     <form action="" method="post">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" required autofocus><br>
-        
+
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required><br>
-        
+
         <label for="message">Message (max 100 characters):</label><br>
         <input type="text" id="message" name="message" maxlength="100" size="50"><br>
-        
+
         <label for="age">Age:</label><br>
         <input type="number" id="age" name="age" min="18" max="100"><br>
-        
+
         <label for="country">Country:</label><br>
         <input type="text" id="country" name="country" value="India" readonly><br>
-        
+
         <label for="quantity">Quantity (between 1 and 10):</label><br>
         <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
-        
+
         <label for="postalcode">Postal Code (5 digits):</label><br>
         <input type="text" id="postalcode" name="postalcode" pattern="[0-9]{5}"><br>
-        
+
         <input type="submit" value="Submit">
     </form>
 </body>
+
 </html>
 
 
 <!-- table -->
 
-<!-- <table> -->
+<!-- <table, <tr>, <th>, <thead>, <td>, <tbody> -->
 
 <!DOCTYPE html>
 <html>
@@ -535,4 +558,256 @@
 </body>
 
 </html>
-    
+
+
+<!-- semantic elements -->
+
+<!-- header, main and footer -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Learn about semantic HTML</p>
+    </header>
+
+    <main>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula massa sit amet sapien dictum, eget
+            aliquet elit posuere. Nulla facilisi.</p>
+
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula massa sit amet sapien dictum, eget
+            aliquet elit posuere. Nulla facilisi.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- nav, aside, section and article -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+        }
+
+        section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        aside {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        article {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Learn about semantic HTML</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula massa sit amet sapien dictum,
+                    eget aliquet elit posuere. Nulla facilisi.</p>
+            </article>
+            <article>
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula massa sit amet sapien dictum,
+                    eget aliquet elit posuere. Nulla facilisi.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Latest News</h2>
+            <p>Stay updated with our latest news and announcements.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-- dom -->
+
+<!-- example 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <style>
+        .highlight {
+            background-color: rgb(210, 117, 25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">DOM!</h1>
+    <p id="paragraph">This is a paragraph.</p>
+    <button onclick="highlight()">Highlight</button>
+
+    <script>
+        function highlight() {
+
+            var heading = document.getElementById("heading");
+            var paragraph = document.getElementById("paragraph");
+
+            heading.classList.add("highlight");
+            paragraph.classList.add("highlight");
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- example 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM</title>
+</head>
+
+<body>
+
+    <h1>List of Fruits</h1>
+    <ul id="fruits-list">
+
+    </ul>
+
+    <button onclick="addFruit()">Add Fruit</button>
+
+    <script>
+        function addFruit() {
+
+            var li = document.createElement("li");
+
+            var fruitName = document.createTextNode("Apple");
+
+            li.appendChild(fruitName);
+
+            var ul = document.getElementById("fruits-list");
+
+            ul.appendChild(li);
+        }
+    </script>
+
+</body>
+
+</html>
