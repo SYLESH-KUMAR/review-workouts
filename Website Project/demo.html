@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>E-Buy</h1>
+    </center>
+
+    <header>
+
+        <nav>
+            <p><a href="https://www.amazon.com">Products</a></p>
+            <p><a href="https://www.flipkart.com">Groceries</a></p>
+            <p><a href="https://www.snapdeal.com">Electronics</a></p>
+            <p><a href="https://www.alibaba.com">Kitchens</a></p>
+        </nav>
+    </header>
+
+    <center>
+        <div class="container">
+            <h1>Registration Form</h1>
+            <form action="index.html" onsubmit="return validateForm()">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter the name"
+                    oninput="displayError(this.value)">
+                <div id="error"></div>
+                <br> <br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" placeholder="Enter the dob" min="2000-01-01" max="2024-03-06">
+                <br> <br>
+                <label for="place">Place</label>
+                <select type="text" id="place" name="place">
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="tiruchirapalli">Tiruchirapalli</option>
+                </select>
+                <label for="mobile">Mobile</label>
+                <div class="phone-input-container">
+                    <select id="country-code" class="country-code">
+                        <option value="+91">+91 (India)</option>
+                        <option value="+1">+1 (USA)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+7">+7 (Russia)</option>
+
+                    </select>
+
+
+                    <input type="text" id="mobile" pattern="[6789][0-9]{9}" title="Please enter valid phone number starts with 6789"
+                        name="mobile" placeholder="Enter the Mobile No" oninput="mobileValidate(this.value)">
+                    <div id="mobileError"></div> <br>
+                    <button>Register</button>
+            </form>
+    </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
